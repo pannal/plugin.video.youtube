@@ -190,7 +190,7 @@ def update_video_infos(provider, context, video_id_dict, playlist_item_id_dict=N
         play_data = yt_item['play_data']
 
         # set mediatype
-        video_item.set_mediatype('video')  # using video
+        video_item.set_mediatype('episode')  # using episode since all setContent is currently episode as well
 
         # duration
         if play_data.get('total_time'):
